@@ -16,7 +16,7 @@ for(j=0;j<26;j++){
           i = i + 1;
         }
       }
-    }
+    }return result.join('');
 }
 
 // TEST CASES
