@@ -6,23 +6,29 @@ function changeVocals (str) {
    var penggantiBesar = ['B','F','J','P','V']
 
 // var result = [];
-for(i=0; i<=str.length-1; i++)
+
+var convert = [];
+for(f=0; f<=str.length-1;f++){
+  convert[f] = str[f]
+}
+for(i=0; i<=convert.length-1; i++)
 {
   for(j=0; j<=4; j++)
   {
-    if(str[i]===huruf[j])
+    if(convert[i]===huruf[j])
     {
-      // console.log(str[i])
+      //  console.log(str[i]===huruf[j])
       // console.log(penggantiKecil[j])
-      str[i] = penggantiKecil[j]
-    }else if(str[i]===hurufBesar[j])
+      convert[i] = penggantiKecil[j]
+    }else if(convert[i]===hurufBesar[j])
     {
       //console.log(str[i])
-      str[i] = penggantiBesar[j]
+      convert[i] = penggantiBesar[j]
     }
   }
 }
-  return str;
+//console.log(convert)
+  return convert;
 }
 
 function reverseWord (str) {

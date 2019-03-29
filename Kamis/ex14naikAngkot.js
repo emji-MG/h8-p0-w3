@@ -58,7 +58,7 @@ function naikAngkot(arrPenumpang) {
       turun = j
     }
   }
-    jarak = turun - naik
+    jarak = Math.abs(turun - naik)
     temp.penumpang = arrPenumpang[i][0]
     temp.naikDari = arrPenumpang[i][1]
     temp.tujuan = arrPenumpang[i][2]

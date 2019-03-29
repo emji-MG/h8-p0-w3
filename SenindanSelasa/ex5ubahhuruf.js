@@ -14,8 +14,12 @@ function ubahHuruf(kata) {
       // console.log(kata[i])
       if(pecahKata[i]==huruf[j] && checking == true)
       {
+        if(pecahKata[i]=='z')
+        {
+          pecahKata[i] = huruf[0]
+        }else{
         pecahKata[i] = huruf[j+1];
-        checking = false;
+        checking = false;}
       }
     }  
   }var result = pecahKata.join('')
@@ -23,7 +27,7 @@ function ubahHuruf(kata) {
 }
 
 // TEST CASES
-console.log(ubahHuruf('wow')); // xpx
+console.log(ubahHuruf('zoz')); // xpx
 console.log(ubahHuruf('developer')); // efwfmpqfs
 console.log(ubahHuruf('javascript')); // kbwbtdsjqu
 console.log(ubahHuruf('keren')); // lfsfo

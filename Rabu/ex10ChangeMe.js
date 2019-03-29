@@ -17,6 +17,10 @@ function changeMe(arr) {
       else{
          identity.age = Number(2019 - arr[i][3])
       }
+      if(identity.age < 0)
+      {
+        identity.age = 'Invalid Birth Year'
+      }
     console.log(identity)
     // for(j=0; j<=arr.length-1; j++)
     // {
